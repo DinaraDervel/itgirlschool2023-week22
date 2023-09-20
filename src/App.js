@@ -5,7 +5,7 @@ import data from './data/data.json'
 function App() {
   return (
     <div className="App">
-      {data.map((hero) => <Card info={hero} />)}
+      {data.map((hero) => <Card info={hero} key={hero.name} />)}
     </div>
   );
 }
